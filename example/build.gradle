@@ -1,0 +1,10 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+mainClassName = 'me.murks.sqlschemaspec.example.Example'
+
+dependencies {
+    implementation project(':schema-spec')
+}

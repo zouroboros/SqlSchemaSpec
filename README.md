@@ -6,6 +6,8 @@ model can the be used to create a database or create queries.
 
 The schema-spec project contains the actual library.
 
+You can find an example project in the example directory.
+
 License
 -------
 sql-schema-spec is licensed under the LGPL-3.0 or later. See the included

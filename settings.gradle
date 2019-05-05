@@ -1,3 +1,4 @@
 rootProject.name = 'sql-schema-spec'
 
 include 'schema-spec'
+include 'example'
