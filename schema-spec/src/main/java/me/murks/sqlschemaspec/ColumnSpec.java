@@ -1,6 +1,6 @@
 /* This file is part of sql-schema-spec.
  *
- * Foobar is free software: you can redistribute it and/or modify
+ * sql-schema-spec is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or any later
  * version.
@@ -29,7 +29,17 @@ public class ColumnSpec {
     private Type type;
     private Boolean nullable;
     private Boolean primaryKey;
-
+    
+    /**
+     * Construct's a new column specification.
+     * @see me.murks.sqlschemaspec.TableSpec The TableSpec class contains convenience methods for creating columns.
+     * @param nTable The table this columns belongs to
+     * @param name The name of the column
+     * @param nType The type of the column
+     * @param nReferences If this column is a foreign key the this is the referenced column
+     * @param nNullable Weather this column is nullable
+     * @param nPrimaryKey Weather this column is a primary key or not
+     */
     public ColumnSpec(TableSpec nTable, String name, Type nType, ColumnSpec nReferences, Boolean nNullable, Boolean nPrimaryKey){
         this.name = name;
         this.type = nType;

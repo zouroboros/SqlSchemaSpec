@@ -4,7 +4,7 @@ Library for specifying SQL database schema in code. The general idea is to
 describe the schema using either an API or (anonymous) classes. The resulting
 model can the be used to create a database or create queries.
 
-The actual schema-spec project contains the actual library.
+The schema-spec project contains the actual library.
 
 License
 -------

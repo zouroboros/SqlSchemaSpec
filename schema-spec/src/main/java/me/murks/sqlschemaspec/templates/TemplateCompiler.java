@@ -1,6 +1,6 @@
 /* This file is part of sql-schema-spec.
  *
- * Foobar is free software: you can redistribute it and/or modify
+ * sql-schema-spec is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or any later
  * version.
@@ -24,15 +24,15 @@ import me.murks.sqlschemaspec.SchemaSpec;
 import me.murks.sqlschemaspec.TableSpec;
 
 /**
- * Class that compiles a valid {@Link SchemaSpec} from classes.
+ * Class that compiles a valid {@link SchemaSpec} from classes.
  * @author zouroboros
  */
 public class TemplateCompiler {
 
     /**
-     * Compiles a valid {@Link SchemaSpec} out into a given {@link SchemaSpec}.
+     * Compiles a valid {@link SchemaSpec} out into a given {@link SchemaSpec}.
      *
-     * All fields of the type {@Link TableSpec} in the template are compiled and added to the schema.
+     * All fields of the type {@link TableSpec} in the template are compiled and added to the schema.
      *
      * @param template The template
      * @param spec The schema to which the tables from the template are added
@@ -56,11 +56,11 @@ public class TemplateCompiler {
     }
 
     /**
-     * Compiles a template. All fields of type {@Link ColumnSpec} in template are added to the given
+     * Compiles a template. All fields of type {@link ColumnSpec} in template are added to the given
      * table.
      * @param template The template instance
      * @param table The table.
-     * @throws IllegalAccessException
+     * @throws IllegalAccessException If the the class of the template object can't be accessed by reflection.
      */
     public void compileTable(Object template, TableSpec table) throws IllegalAccessException{
         for (Field field: table.getClass().getDeclaredFields()) {
