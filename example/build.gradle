@@ -6,5 +6,5 @@ plugins {
 mainClassName = 'me.murks.sqlschemaspec.example.Example'
 
 dependencies {
-    implementation project(':schema-spec')
+    implementation project('ql:schema-spec')
 }

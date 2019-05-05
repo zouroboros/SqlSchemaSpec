@@ -1,4 +1,4 @@
-package me.murks.sqlschemaspec.example.me.murks.sqlschemaspec.example;
+package me.murks.sqlschemaspec.example;
 
 import me.murks.sqlschemaspec.ColumnSpec;
 import me.murks.sqlschemaspec.SchemaSpec;
