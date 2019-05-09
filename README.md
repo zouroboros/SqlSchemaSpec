@@ -1,5 +1,7 @@
 sql-schema-spec
 ===============
+[![Build Status](https://travis-ci.org/zouroboros/sql-schema-spec.svg?branch=master)](https://travis-ci.org/zouroboros/sql-schema-spec)
+
 Library for specifying SQL database schema in code. The general idea is to
 describe the schema using either an API or (anonymous) classes. The resulting
 model can the be used to create a database or create queries.
